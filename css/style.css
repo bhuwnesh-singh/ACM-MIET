@@ -1,0 +1,838 @@
+body {
+		background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+		font-weight: 400;
+}
+
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
+
+h3,h5 {
+  font-weight: 500;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h3 {
+  line-height: 36px;
+}
+
+h5 {
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+#home p, #acm p, #gallery p, #event p, #detail p, #team p, #contact p{
+    color: darkblue;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+hr{
+    background-color: blue;
+}
+
+
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+.section-title {
+  margin-bottom: 32px;
+}
+
+#overview,
+#register,#acm {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+#detail, #video, #acm, #team,#faq, 
+#event, #gallery,
+#sponsors, 
+#contact, footer {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#detail,
+#team, #sponsors, #gallery,
+footer {
+  text-align: center;
+}
+
+#overview h3,
+#detail h3, #video h3,
+#register h3,
+#venue h3,
+#contact h3,
+#acm h3{
+    padding-bottom: 12px;
+}
+
+#home .btn,
+#contact .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 14px 42px;
+    margin-top: 42px;
+    margin-right: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#home .btn-danger,
+#contact .btn-danger {
+    background: #f2545f;
+    border-color: transparent;
+}
+
+#contact .btn {
+  border-radius: 100px;
+}
+
+#home .btn-danger:hover {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+#contact .btn-danger:hover {
+  background: #222;
+}
+
+#home .btn-default:hover {
+    background: #ffffff;
+    color: #333333;
+    border-color: transparent;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-rotating-plane {
+  width: 50px;
+  height: 50px;
+  background-color: #222;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+
+/*---------------------------------------
+    Navigation Links section              
+-----------------------------------------*/
+.custom-navbar {
+    margin-bottom: 0;
+    background: rgba(255,255,255,0.8);
+}
+
+.custom-navbar .navbar-brand {
+    color: darkblue;
+    font-weight: 550;
+    font-size: 3.5rem;
+    line-height: 40px;
+    height: auto;
+}
+
+.custom-navbar .nav li a {
+    color: darkblue;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 45px;
+    transition: all 0.4s ease-in-out;
+    height: auto;
+}
+
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: blue;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.custom-navbar .nav li.active > a {
+    background-color: transparent;
+    color: blue;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle {
+    background-color: transparent;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+    background: #00bfff;
+    border-color: transparent;
+}
+
+@media(min-width:768px) {
+    .custom-navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        background: 0 0; 
+    }
+    .custom-navbar.top-nav-collapse {
+        background: rgba(255,255,255,0.8);
+        padding: 0;
+    }
+
+}
+
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+#home {
+    background: url('../acm-website/bg9.png') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+#home h3 {
+  letter-spacing: 2px;
+}
+
+
+
+/*---------------------------------------
+   Overview  section              
+-----------------------------------------*/
+#overview img {
+  position: relative;
+}
+
+#overview{
+    background: url('../acm-website/acm2%20-%20Copy.jpg') 50% 0 fixed;
+}
+
+#overview p{
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/*---------------------------------------
+    Detail section              
+-----------------------------------------*/
+#detail {
+    background: url('../acm-website/acm82.png') 50% 0 repeat-y fixed;
+    color: #ffffff;
+}
+
+#detail .fa {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+#detail h3
+{
+    font-size: 30px;
+}
+
+#detail p
+{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+/*---------------------------------------
+    Why ACM section              
+-----------------------------------------*/
+#acm {
+    background: url('../acm-website/bg10.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+#acm iframe {
+  border: none;
+}
+
+#acm a{
+    border-color: white;
+    border-width: 1.5px;
+    background-color: darkblue;
+    color:white;
+}
+
+#acm p{
+    color:darkblue;
+}
+
+#acm hr{
+    background-color: blue;
+    height: 1px;
+}
+
+#acm h2{
+    color:blue;
+}
+
+#acm a:hover{
+    background-color: dodgerblue;
+}
+
+
+
+
+/*---------------------------------------
+    Gallery section              
+-----------------------------------------*/
+#gallery {
+    background: url('../acm-website/b1.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+
+#gallery p{
+    color: white;
+}
+
+#gallery hr{
+    background-color: white;
+    height: 1px;
+    width: 50%;
+}
+
+#gallery h2{
+    color:white;
+}
+
+#gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*---------------------------------------
+   Team section              
+-----------------------------------------*/
+#team {
+    background: url(../acm-website/bg11.jpg);
+}
+
+#team h2{
+    color: blue;
+}
+
+#team hr{
+    background-color: blue;
+    height: 1px;
+    width: 50%;
+}
+
+#team h3 {
+    font-size: 22px;
+    margin-bottom: 0px;
+    color: darkblue;
+}
+
+#team h5 {
+  color: darkblue;
+  font-size: 18px;
+}
+
+#team img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#team .col-md-3 {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+}
+
+#team .team-wrapper {
+    background: rgba(255,255,255,0.8);
+    padding-bottom: 10px;
+}
+
+
+
+/*---------------------------------------
+   Event section              
+-----------------------------------------*/
+#event{
+    background: url(../acm-website/bg8.jpg) 50% 50% repeat-y fixed; 
+    align-content: center;
+    text-align: center;
+}
+
+#event h4 {
+    color: darkblue;
+    font-size: 14px;
+    align-content: center;
+}
+
+#event h2, #event p{
+    color: blue;
+}
+
+#event hr{
+    background-color: blue;
+    height: 1px;
+    width: 50%;
+}
+
+#event h3 {
+  margin-top: 16px;
+}
+
+#event .event-divider {
+    border: 1px solid darkblue;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+
+#event span {
+    padding-right: 12px;
+}
+
+#event img {
+  border-radius: 50%;
+}
+
+.nav-tabs {
+  margin-bottom: 20px;
+  align-content:center; 
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+  align-content: center;
+}
+
+.nav-tabs > li > a {
+  color: blue;
+  font-weight: 600;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: none;
+  border-radius: 0px;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: transparent;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: deepskyblue;
+  cursor: default;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: deepskyblue;
+}
+
+.tab-content {
+  padding-top: 20px;
+  align-content: center;
+}
+
+#event .list{
+    text-align: left;
+    color: darkblue;
+}
+
+
+
+
+/*---------------------------------------
+   Faq section              
+-----------------------------------------*/
+#faq {
+  background: url(../acm-website/bg17.jpg);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#faq h2{
+    color: blue;
+}
+
+#faq hr{
+    background-color: blue;
+    height: 1px;
+}
+
+#faq p, ol{
+    color:darkblue;
+}
+
+#faq .panel-group {
+  margin-top: 32px;
+}
+
+#faq .panel-group .panel {
+  margin-bottom: 8px;
+}
+
+#faq .panel-default {
+  border: none;
+}
+
+#faq .panel-default>.panel-heading {
+  background: #f0f0f0;
+  color: blue;
+}
+
+#faq .panel-heading {
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+#faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top: none;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-bottom: 22px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"] {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"]::after {
+  content: "-";
+  display: block;
+  position: absolute;
+  line-height: 1;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
+  content: "+";
+}
+
+
+
+
+/*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+#contact {
+    background: url('../acm-website/bg5.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contact .contact_des {
+  padding-top: 3rem;
+  padding-right: 2rem;
+}
+
+#contact .contact_detail {
+  background: #ffffff;
+  padding: 3rem 3rem 10rem 3rem;
+}
+
+#contact .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .form-control:focus {
+  border-bottom-color: #999;
+}
+
+#contact input {
+  height: 30px;
+}
+
+#contact input[type="submit"] {
+  background: dodgerblue;
+  border-radius: 100px;
+  border: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 12px;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact input[type="submit"]:hover {
+  background: rgba(0,0,139,0.8);
+}
+
+
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+footer {
+  background-attachment: fixed;
+  background: url('../acm-website/acm-book2.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 10%;
+}
+
+#contact-details p{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/* Back top */
+.go-top {
+  background-color: rgba(0,0,139,0.8);
+  bottom: 2em;
+  right: 2em;
+  color: #ffffff;
+  font-size: 32px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  border-style: ridge; 
+  border-color: white;
+}
+
+.go-top:hover {
+    background: blue;
+    color: #ffffff;
+}
+
+
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    color: blue;
+    border-radius: 100px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.social-icon li a:hover {
+    background: deepskyblue;
+    color: #ffffff;
+}
+
+
+
+/*---------------------------------------
+   Responsive styles            
+-----------------------------------------*/
+@media (max-width: 1500px){
+  #home img{
+    height: auto;
+    width: 60%;
+    margin-top: 20vh; 
+  }
+}
+
+@media (max-width: 980px) {
+
+  p {font-size: 13px;}
+
+  .custom-navbar .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .custom-navbar .nav li a {
+    font-size: 11px;
+	line-height: 20px;
+  }
+
+  #home { height: 65vh; }
+  
+  #home img{
+      height: auto;
+      width: 55%;
+      margin-top: 20vh;
+  }
+    
+  #contact .contact_detail {
+  background: #ffffff;
+  padding: 10rem 3rem 10rem 5rem;
+}
+
+}
+
+@media (max-width: 768px) {
+
+  .custom-navbar .navbar-brand {
+    line-height: 20px;
+  }
+
+  #overview img,
+  #detail .col-md-4,
+  #register form {
+    padding-top: 32px;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+  
+  #home img{
+      height: auto;
+      width: 65%;
+      margin-top: 15vh;
+  }
+
+  #event img {
+    padding-bottom: 32px;
+  }
+
+  #sponsors img {
+    padding-top: 22px;
+  }
+
+  #contact .contact_detail {
+    margin-top: 82px;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  #home {
+    height: 100vh;
+  }
+  #home img{
+      height: auto;
+      width: 80%;
+      margin-top: 10vh;
+  }
+}
+
